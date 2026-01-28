@@ -12,7 +12,7 @@
 
                 </div>
                 <div class="flex flex-col items-center justify-center mt-auto gap-2">
-                    <SeeDocumentDetails />
+                    <SeeDocumentDetails class="bg-[#313234]" />
                     <HeartFilled :width="28" :height="23" />
                 </div>
 

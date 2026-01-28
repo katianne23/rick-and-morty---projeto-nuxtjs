@@ -7,13 +7,7 @@ import White from '../icons/White.vue';
 <template>
     <header class="bg-black pt-16">
         <PageContainer class="flex flex-col gap-5 lg:p-0 p-6">
-            <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:gap-0 gap-3">
-                <img src="/public/images/LogoB.png" alt="Logo" width="220" height="64" class="w-40 md:w-56 lg:w-64 lg:mb-0 mb-4">
-                <button class="flex items-center gap-2 p-2 pr-3 bg-[#11B0C8] rounded-[32px]">
-                    <IconsHeartOutlined color="white" :width="24" :height="24" />
-                    Lista de Favoritos
-                </button>
-            </div>
+            <Header />
             <div class="flex flex-col lg:flex-row gap-16">
                 <div class="flex flex-col gap-4 lg:gap-6 w-full lg:w-1/2 text-center lg:text-left">
                     <h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight">

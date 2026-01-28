@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="flex items-center justify-between">
-                    <SeeDocumentDetails class="my-auto"/>
+                    <SeeDocumentDetails class="my-auto bg-[#313234]"/>
                     <IconsHeartFilled :width="32" :height="32"/>  
                 </div>
 
