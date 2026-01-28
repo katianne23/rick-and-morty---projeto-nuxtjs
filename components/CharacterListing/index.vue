@@ -3,7 +3,7 @@
         <div class="flex flex-wrap gap-4 justify-center xl:justify-start">
             <ListingHeader title="Personagens"/>
             <div class="flex flex-wrap gap-4 justify-center">
-                <Card v-for="currentCharacter of data.results">
+                <Card v-for="currentCharacter of characterToShow">
                     <img :src="currentCharacter.image" :alt="currentCharacter.name" height="200" width="262"
                         class="rounded-2xl h-[200px] object-cover" />
 
@@ -24,7 +24,7 @@
                         </span>
                     </div>
 
-                    <SeeDocumentDetails :action-url="currentCharacter.url" class="mt-auto" />
+                    <SeeDocumentDetails :id="currentCharacter.id" class="mt-auto self-end" type="character" />
 
                 </Card>
             </div>
@@ -37,8 +37,13 @@ import IconsHeartFilled from "../../components/icons/HeartFilled.vue";
 import IconsHeartOutlined from "../../components/icons/HeartOutlined.vue";
 import SeeDocumentDetails from "../../components/SeeDocumentDetails/index.vue"
 import Card from "../../components/Card/index.vue";
-import ListingHeader from "../../components/ListingHeader/index.vue"
+import ListingHeader from "../../components/ListingHeader/index.vue";
+
 const { data } = await useFetch(
     "https://rickandmortyapi.com/api/character",
 );
+
+const characterToShow = computed(() => {
+    return data.value?.results?.slice(0,4) || [];
+})
 </script>
