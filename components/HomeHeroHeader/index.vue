@@ -15,11 +15,11 @@ import White from '../icons/White.vue';
                     </h1>
                     <p class="text-gray-300 text-sm sm:text-lg">Personagens. localizações, episódios e muito mais.</p>
                     <div class="flex items-center lg:justify-start justify-center gap-4 mt-10">
-                        <button class="flex items-center gap-2 p-2 pr-3 bg-[#11B0C8] rounded-[32px]">
+                        <button class="flex items-center gap-2 p-2 pr-3 bg-[#11B0C8] rounded-4xl">
                             <Dark />
                             Escuro
                         </button>
-                        <button class="flex items-center gap-2 p-2 pr-3 bg-[#313234] rounded-[32px]">
+                        <button class="flex items-center gap-2 p-2 pr-3 bg-[#313234] rounded-4xl">
                             <White />
                             Claro
                         </button>

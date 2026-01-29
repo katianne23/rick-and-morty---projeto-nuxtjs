@@ -22,7 +22,11 @@ const urlToRedirect = computed(() => {
         return `/character/${props.id}`
     }
 
-    return `/epsodio/${props.id}`
+    if(props.type === 'episode') {
+        return `/episode/${props.id}`
+    }
+
+    return `/location/${props.id}`
 })
 
 </script>

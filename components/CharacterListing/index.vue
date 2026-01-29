@@ -5,7 +5,7 @@
             <div class="flex flex-wrap gap-4 justify-center">
                 <Card v-for="currentCharacter of characterToShow">
                     <img :src="currentCharacter.image" :alt="currentCharacter.name" height="200" width="262"
-                        class="rounded-2xl h-[200px] object-cover" />
+                        class="rounded-2xl h-50 object-cover" />
 
                     <div class="grid grid-cols-[1fr,48px]">
                         <div class="flex flex-col gap-4">
