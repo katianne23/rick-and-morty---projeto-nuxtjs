@@ -1,11 +1,11 @@
 <template>
     <PageContainer class="pt-12">
         <Header />
-        <div class="flex gap-16 pt-10">
-            <img :src="data.image" :alt="data.name" width="369" height="461" class="rounded-[16px]">
-            <div class="flex flex-col gap-8">
+        <div class="flex lg:flex-row lg:items-start items-center flex-col gap-16 pt-10">
+            <img :src="data.image" :alt="data.name" width="369" height="461" class="rounded-[16px] lg:w-[369px] w-40">
+            <div class="flex lg:items-start items-center flex-col gap-8">
                 <div class="flex items-center gap-4">
-                    <h1 class="text-5xl ">{{ data.name }}</h1>
+                    <h1 class="lg:text-5xl text-4xl lg:text-left text-center">{{ data.name }}</h1>
                     <HeartOutlined />
                 </div>
                 <p class="flex items-center gap-2">
@@ -24,7 +24,7 @@
                     </p>
                 </div>
             </div>
-            <div class="flex self-end gap-4">
+            <div class="flex  lg:self-end self-center gap-4 lg:pr-0 pr-4 lg:pl-0 pl-4">
                 <Card class="flex flex-col items-center justify-center gap-0 pt-6 mt-4 relative h-[170px] bg-[#313234]">
                     <div class="absolute top-[-30px]">
                         <Planet />
@@ -53,7 +53,7 @@
         </div>
         <div class="border-b border-[#11B0C8] pt-6"></div>
         <section class="pt-10">
-            <div class="flex items-center gap-3 w-[260px]"><More /> <h2 class="text-[24px] font-bold">Mais personagens</h2> </div>
+            <div class="flex items-center mx-auto lg:mx-0 gap-3 w-[260px]"><More /> <h2 class="text-[24px] font-bold">Mais personagens</h2> </div>
             <CharacterCard />
         </section>
     </PageContainer>

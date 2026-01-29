@@ -6,7 +6,7 @@
                     <img :src="currentCharacter.image" :alt="currentCharacter.name" height="200" width="262"
                         class="rounded-2xl h-50 object-cover" />
 
-                    <div class="grid grid-cols-[1fr,48px]">
+                    <div class="flex justify-between">
                         <div class="flex flex-col gap-4">
                             <p class="text-base font-bold">{{ currentCharacter.name }}</p>
 

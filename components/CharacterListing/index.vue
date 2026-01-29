@@ -7,7 +7,7 @@
                     <img :src="currentCharacter.image" :alt="currentCharacter.name" height="200" width="262"
                         class="rounded-2xl h-50 object-cover" />
 
-                    <div class="grid grid-cols-[1fr,48px]">
+                    <div class="flex justify-between">
                         <div class="flex flex-col gap-4">
                             <p class="text-base font-bold">{{ currentCharacter.name }}</p>
 
@@ -23,14 +23,15 @@
                                 </p>
                             </div>
                         </div>
-
                         <span>
                             <IconsHeartFilled v-if="currentCharacter.status === 'Alive'" />
                             <IconsHeartOutlined v-if="currentCharacter.status !== 'Alive'" />
                         </span>
                     </div>
 
-                    <SeeDocumentDetails :id="currentCharacter.id" class="mt-auto self-end bg-[#11B0C8]" type="character" />
+
+                    <SeeDocumentDetails :id="currentCharacter.id" class="mt-auto self-end bg-[#11B0C8]"
+                        type="character" />
 
                 </Card>
             </div>
